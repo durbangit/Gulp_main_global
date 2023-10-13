@@ -10,12 +10,22 @@
       <link rel="stylesheet" href="css/style.css" type="text/css">
    </head>
 <body>
-   @@include('blocks/header.html')
+   <div class="wrapper">
 
-   <p>Content</p>
+      @@include('blocks/header.html')
 
-   @@include('blocks/footer.html')
-
+      <section class="content">
+         <div class="container">
+            <h2 class="content__title">Content</h2>
+            <p class="content__text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, aliquid.
+            </p>
+         </div>
+      </section>
+      
+      @@include('blocks/footer.html')
+      
+   </div>
    <script src="./js/index.js"></script>
 </body>
 
