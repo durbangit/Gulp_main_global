@@ -1,0 +1,11 @@
+@font-face {
+   font-family: 'Имя шрифта';
+   font-display: swap;
+   src: url("../fonts/.eot");
+   src: local("O"),
+      url("../fonts/.woff") format("woff"),
+      url("../fonts/.woff2") format("woff2"),
+      url("../fonts/.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}

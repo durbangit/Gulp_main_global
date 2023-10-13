@@ -1,0 +1,103 @@
+1. npm init - Cодает файл (package.json), дает проекту имя, версию, описание и т. д.
+==================
+--save-dev || -D (Установить локально в корневую папку проекта)
+npm install --save-dev gulp || npm i --save-dev gulp (Установите пакет gulp в свои завиисимости разработчиков (devDependities)) 
+gulp --version || gulp -v (Проверить версию gulp)
+
+создайте файл с именем (gulpfile.js) в корне вашего проекта
+=================
+npm i --save-dev gulp-server-livereload
+//--scss
+npm i sass gulp-sass --save-dev
+npm i gulp-sourcemaps --save-dev
+npm i --save-dev gulp-autoprefixer
+npm i gulp-sass-glob --save-dev
+npm i --save-dev gulp-group-css-media-queries
+
+//--html
+npm i --save-dev gulp-file-include
+npm i --save-dev gulp-include
+npm i gulp-htmlclean --save-dev
+
+npm i --save-dev gulp-clean
+npm i --save-dev gulp-plumber
+npm i --save-dev gulp-notify
+
+npm i --save-dev gulp-changed
+//--img , web-p
+npm i --save-dev gulp-imagemin@7.1.0
+npm i gulp-webp gulp-webp-html gulp-webp-css --save-dev
+
+//--для минимизации
+npm i gulp-htmlclean --save-dev
+npm i gulp-csso --save-dev
+
+//--для конвертации шрифтов
+npm i --save-dev gulp-fonter-unx
+npm i --save-dev gulp-ttf2woff2
+=================
+
+Описание пакетов:
+gulp - собственно Gulp
+gulp-server-livereload - Сервер с автообновлением страницы
+
+gulp-sass - Сборка SASS / SCSS
+sass - Необходим для сборки SASS / SCSS
+gulp-sourcemaps - Исходные карты для CSS
+gulp-autoprefixer - Префикс CSS с помощью автопрефиксера
+gulp-sass-glob - позволяет использовать импорт glob
+gulp-group-css-media-queries - группировка медиа-запросов CSS
+
+gulp-clean - Удаление файлов
+
+gulp-file-include - Подключение файлов друг в друга. HTML include
+gulp-plumber - Фикс ошибок при сборке
+gulp-notify - Нотификации
+gulp-group-css-media-queries - Группировка CSS медиа запросов
+
+gulp-changed - Проходить только измененные файлы
+gulp-imagemin - Уменьшает изображения PNG, JPEG, GIF и SVG
+gulp-webp - Конвертируйте изображения PNG, JPEG, TIFF, в WebP
+gulp-webp-html - Генерация изображеня, автоподключение webp в HTML
+gulp-webp-css - Генерация изображеня, автоподключение webp в CSS
+
+gulp-htmlclean - для минимизации HTML/SVG без изменения его структуры.
+gulp-csso - для минимизации CSS
+
+gulp-fonter - для конвертации шрифтов из ["ttf", "otf"] в ["ttf", "eot", "woff"]
+gulp-ttf2woff2 - для конвертации шрифтов из ["ttf"] в ["woff2"]
+----------------------------------------------------------------------
+Компелировать код js для старых браузеров, старых версий
+Сборка скриптов. webpack, babel
+
+Установка babel:
+npm i gulp-babel @babel/core @babel/preset-env
+
+- JS таск
+- Настройки package-json
+
+----------------------------------------------------------------------
+
+Установка webpack:
+npm i webpack-stream style-loader css-loader --save-dev
+
+- JS таск
+- webpack конфиг
+- пример файлов с модулями
+
+Пример с datepicker:
+npm i air-datepicker -S
+
+
+JS:
+import AirDatepicker from 'air-datepicker';
+import 'air-datepicker/air-datepicker.css';
+
+document.addEventListener('DOMContentLoaded', () => {
+	new AirDatepicker('#my-element');
+});
+
+HTML:
+<input type="text" id="my-element">
+
+----------------------------------------------------------------------
