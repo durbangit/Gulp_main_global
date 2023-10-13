@@ -1,7 +1,14 @@
 node_modules
 
-convert_fonts_out
+# convert_fonts_out
 
-dist
+# dist
+# docs
 
-docs
+# .gitignore
+# .prettierignore
+# gulpfile.js
+# main_package.txt
+# package-lock.json
+# package.json
+# webpack.config.js
